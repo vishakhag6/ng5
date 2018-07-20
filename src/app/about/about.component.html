@@ -3,3 +3,34 @@
 </p>
 
 <a href="" (click)="backToHome()">Back To Home</a>
+
+<!-- property binding: ex01 -->
+<!-- <p [class]="mainHeading">It is a demo paragrah to see the property binding.</p>
+<input type="text" [placeholder]="defaultPlaceholder" [value]="defaultValue"> -->
+
+
+
+<!-- ngif and ng-template usage: exp01 -->
+<!-- <p *ngIf="isShow; then thenCondition else elseCondition"></p>
+<ng-template #thenCondition>  
+    <h1>Condition is then</h1>
+</ng-template>
+<ng-template #elseCondition>
+  <h1>Condition is else</h1>
+</ng-template>
+<button (click)="changeBlock()">{{isShow ? 'show else Block' : 'Show then Block'}}</button> -->
+
+
+<!-- ngClass:multiple class -->
+<!-- <p [ngClass]="[mainHeading, mainHeading2]">It is a demo paragrah to see the property binding.</p>
+<p [ngClass]="colors">array of multiple class</p> -->
+
+
+<!-- ngStyle:ex01  -->
+<!-- <div [ngStyle]="{'background-color':'green', 'color': 'pink', 'font-weight': 600, 'font-size.px': 14}">
+  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+</div>
+<div [ngClass]="isShow ? 'styleDiv' : ''">
+  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+</div> -->
+

@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
   itemCount: number;
   btnText: string = 'Add an item';
   inputText: string = 'My first goal is to learn everything';
-  goalsArr = [];
+  goalsArr:Array<any> = [];
 
   constructor() { }
 
@@ -51,5 +51,6 @@ export class HomeComponent implements OnInit {
 
   removeItem(i) {
     this.goalsArr.splice(i, 1);
+    this.itemCount = this.goalsArr.length;
   }
 }

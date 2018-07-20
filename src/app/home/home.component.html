@@ -17,7 +17,8 @@
   </div>
   <div class="col">
     <p class="life-container" *ngFor="let goal of goalsArr; let i = index">
-      {{goal}} <span class="remove-item" (click)="removeItem(i)">X</span>
+      {{goal | titlecase}} <span class="remove-item" (click)="removeItem(i)">X</span>
     </p>
   </div>
 </div>
+

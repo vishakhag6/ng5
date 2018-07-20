@@ -1,0 +1,9 @@
+<div class="container color-dark" [ngStyle]="{'padding': '10px'}">
+  <h2>Posts List:</h2>
+  <div *ngFor="let post of posts">
+    <p class="color-light"><a [routerLink]="[post.id]">{{post.title}}</a></p>
+    <p>{{post.body}}</p>
+    <hr>
+  </div>
+</div>
+
